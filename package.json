@@ -1,5 +1,5 @@
 {
-  "name": "wakatime-to-mongo-daily",
+  "name": "wakatime-to-supabase-daily",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",

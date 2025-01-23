@@ -1,12 +1,5 @@
-require('dotenv').config();
-import { get } from 'axios';
-import { MongoClient } from 'mongodb';
-
-// Configura las variables
-const WAKATIME_API_KEY = process.env.WAKATIME_API_KEY;
-const MONGODB_URI = process.env.MONGODB_URI;
-const DATABASE_NAME = 'wakatime';
-const COLLECTION_NAME = 'dailyStats';
+import 'dotenv/config'
+import { saveWakaTimeData } from './libs/supabase.mjs';
 
 // Función para obtener datos de WakaTime
 async function fetchWakaTimeData() {
