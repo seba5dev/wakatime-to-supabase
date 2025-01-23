@@ -3,7 +3,7 @@ import { saveWakaTimeData } from './libs/supabase.mjs';
 
 // Función para obtener datos de WakaTime
 async function fetchWakaTimeData() {
-  const response = await fetch('https://wakatime.com/api/v1/users/current/summaries?range=last_7_days', {
+  const response = await fetch('https://wakatime.com/api/v1/users/current/summaries?range=yesterday', {
     headers: { Authorization: `Bearer ${process.env.WAKATIME_API_KEY}` },
   });
   if (!response.ok) {
